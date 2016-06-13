@@ -13,7 +13,6 @@ en:
           message: "Message"
           subject: "Subject"
     contact_us_title: "Contact Us"
-    send_message: Send a message
     fill_in_fields: Please fill in all of the required * fields
     sent_by_contact_form: "Sent by contact form from %{email}"
     sent_by_name: "Sent by %{name} from %{email}"

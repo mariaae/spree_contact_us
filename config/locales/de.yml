@@ -13,7 +13,6 @@ de:
           message: "Nachricht"
           subject: "Betreff"
     contact_us_title: "Kontakt"
-    send_message: Nachricht senden
     fill_in_fields: Bitte füllen Sie alle mit * gekennzeichneten Felder aus.
     sent_by_contact_form: "Gesendet durch Kontaktformular von %{email}"
     sent_by_name: "Gesendet von %{name} via %{email}"
