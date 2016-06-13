@@ -13,6 +13,8 @@
 <%= render :partial => 'spree/shared/error_messages', :locals => { :target => @contact } %>
 
 <h1><%= Spree.t(:contact_us_title) %></h1>
+<p class="bold"> <%= Spree.t(:send_message) %> </p>
+<p> <%= Spree.t(:fill_in_fields) %> </p>
 <%= form_for @contact, :url => contacts_path, :html => { :novalidate => '' } do |f| %>
   <% if SpreeContactUs.require_name %>
     <p>
@@ -51,3 +53,5 @@
     <%= f.submit Spree.t(:submit), :alt => Spree.t(:submit), :id => 'contact_us_contact_submit', :title => Spree.t(:submit), :class => 'btn btn-primary' %>
   </p>
 <% end %>
+
+<%= render :partial => 'spree/contact_us/contacts/content_after_form'%>
