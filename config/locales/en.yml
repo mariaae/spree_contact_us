@@ -7,10 +7,13 @@ en:
       attributes:
         contact_us/contact:
           name: "Name"
+          phone: "Phone"
+          company: "Company"
           email: "Email"
           message: "Message"
           subject: "Subject"
     contact_us_title: "Contact Us"
+    fill_in_fields: Please fill in all of the required * fields
     sent_by_contact_form: "Sent by contact form from %{email}"
     sent_by_name: "Sent by %{name} from %{email}"
     subject: "Contact Us message from %{email}"
