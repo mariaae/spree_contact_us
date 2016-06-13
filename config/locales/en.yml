@@ -7,6 +7,8 @@ en:
       attributes:
         contact_us/contact:
           name: "Name"
+          phone: "Phone"
+          company: "Company"
           email: "Email"
           message: "Message"
           subject: "Subject"
