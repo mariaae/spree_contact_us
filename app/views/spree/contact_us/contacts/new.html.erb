@@ -10,41 +10,39 @@
     <p> <%= Spree.t(:fill_in_fields) %> </p>
     <%= form_for @contact, :url => contacts_path, :html => { :novalidate => '' } do |f| %>
       <% if SpreeContactUs.require_name %>
-        <p>
+        <div class="form-group">
           <%= f.label :name %>
           <span class="required">*</span><br/>
           <%= f.text_field :name, class: 'required form-control' %>
-        </p>
+        </div>
       <% end %>
-      <p>
+      <div class="form-group">
         <%= f.label :email %>
         <span class="required">*</span><br/>
         <%= f.email_field :email, class: 'required form-control email' %>
-      </p>
-      <p>
+      </div>
+      <div class="form-group">
         <%= f.label :phone %>
-        <span class="required">*</span><br/>
         <%= f.text_field :phone, class: 'required form-control phone' %>
-      </p>
-      <p>
+      </div>
+      <div class="form-group">
         <%= f.label :company %>
         <%= f.text_field :company, class: 'required form-control company' %>
-      </p>
+      </div>
       <% if SpreeContactUs.require_subject %>
-        <p>
+        <div class="form-group">
           <%= f.label :subject %>
           <span class="required">*</span><br/>
           <%= f.text_field :subject, class: 'required form-control' %>
-        </p>
+        </div>
       <% end %>
-      <p>
+      <div class="form-group">
         <%= f.label :message %>
         <span class="required">*</span><br/>
         <%= f.text_area :message, class: 'required form-control' %>
-      </p>
-      <p>
-        <%= f.submit Spree.t(:submit), :alt => Spree.t(:submit), :id => 'contact_us_contact_submit', :title => Spree.t(:submit), :class => 'btn btn-primary' %>
-      </p>
+      </div>
+
+      <%= f.submit Spree.t(:submit), :alt => Spree.t(:submit), :id => 'contact_us_contact_submit', :title => Spree.t(:submit), :class => 'btn btn-primary' %>
     <% end %>
 
     <%= render :partial => 'spree/contact_us/contacts/content_after_form' %>
