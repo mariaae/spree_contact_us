@@ -1,3 +1,12 @@
-<p><%= @contact.message %></p>
+<p>
+Email: <%= @contact.email %> <br>
+Anrede: <%= @contact.salutation %> <br>
+Title: <%= @contact.title %> <br>
+Name: <%= @contact.name %> <br>
+Telefon: <%= @contact.phone %> <br>
+Firma: <%= @contact.company %>
+</p>
+
+<p>Nachricht: <%= @contact.message %></p>
 <p>---------------------</p>
 <p><%= SpreeContactUs.require_name ? Spree.t(:sent_by_name, :email => @contact.email, :name => @contact.name) : Spree.t(:sent_by_contact_form, :email => @contact.email) %></p>

@@ -8,6 +8,8 @@ en:
         contact_us/contact:
           name: "Name"
           phone: "Phone"
+          salutation: "Salutation"
+          title: "Title"
           company: "Company"
           email: "Email"
           message: "Message"
